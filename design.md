@@ -33,7 +33,6 @@ CostGenerator/
 ├── doc/                           # 문서 관련 파일 디렉토리
 │   ├── project_overview.md        # 프로젝트 개요 및 목표 문서
 │   ├── design.md                  # 시스템 설계 문서
-│   └── setting.md                 # 단가등록 및 소급데이터 등록 관련 설정 문서
 └── README.md                      # 프로젝트 설명 문서 (현재 파일)
 
 ```
