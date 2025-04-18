@@ -18,7 +18,10 @@
 
 ## 3. 시스템 사용 방법 (cost_generator.exe 실행)
 
-1. `cost_generator.exe`를 실행하여 프로그램을 시작합니다. ![main_program](assets/main_pg.png)
+1. `cost_generator.exe`를 실행하여 프로그램을 시작합니다.
+
+ ![main_program](assets/main_pg.png)
+ 
 2. 로그인 화면이 나타나면, 사용자 인증을 위해 ID/PW를 입력하여 로그인합니다.
 3. 기초데이터 Download
    1. 기초데이터 Download 를 이용하여, 엑셀파일 로드를 위한 기초데이터를 다운로드합니다.
@@ -26,19 +29,27 @@
    3. 기초데이터 Excel 문서내에 기본 작성가이드 Sheet가 추가됩니다.
    4. 프로그램 Information - Guide File 메뉴를 통해 사용자가이드(Guide.xlsx) 문서를 수정/저장하면 사용자별 맞춤형 가이드 Sheet가 생성됩니다.
 4. 사용자 Excel 파일Load
+   
 ![로드](assets/load.png)
+
    1. 화면에서 "Load" 버튼을 클릭하여 결재 문서 생성에 필요한 엑셀 파일을 로드합니다.
    2. 데이터 로드에 대한 프로그램 메시지를 확인합니다.
    3. 정상적으로 데이터가 로드되었으면, "Validation" 버튼이 활성화 됩니다.
+      
 5. Validation 검증
+   
 ![검증](assets/validation.png)
+
    1. "Validation" 버튼을 클릭하여 데이터 검증을 수행합니다.
    2. 검증파일에 오류가 있으면, 오류에 대한 프로그램 메시지를 확인하고 데이터를 수정합니다. ![검증](assets/image4.png)
    3. 사용자 검증편의를 위하여 검증데이터 확인시에 파일명_validated_timestamp.xlsx로 매번 다른이름으로 저장됩니다.
    4. 검증파일에 오류가 없으면, "그룹웨어 결재연동" 버튼이 활성화 됩니다.
 6. 그룹웨어 결재연동
+
 ![그룹웨어 버튼](assets/pg_groupware.png)
+
 ![그룹웨어](assets/groupware.png)
+
    1. "그룹웨어 결재연동" 버튼을 클릭하여 네이버 웍스에 결재 문서 생성 요청을 보냅니다.
    2. 프로그램 로그인시 사용자 권한에 따라 네이버 웍스 SSO 인증정보가 실행됩니다.
    3. 네이버 웍스 인증 화면이 팝업이 되면 로그인을 수행한 후, 자동으로 결재 문서가 생성됩니다.
