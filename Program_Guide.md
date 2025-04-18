@@ -41,25 +41,25 @@
 ![검증](assets/validation.png)
 
    1. "Validation" 버튼을 클릭하여 데이터 검증을 수행합니다.
-   2. 검증파일에 오류가 있으면, 오류에 대한 프로그램 메시지를 확인하고 데이터를 수정합니다. ![검증](assets/image4.png)
+   2. 검증파일에 오류가 있으면, 오류에 대한 프로그램 메시지를 확인하고 데이터를 수정합니다.
    3. 사용자 검증편의를 위하여 검증데이터 확인시에 파일명_validated_timestamp.xlsx로 매번 다른이름으로 저장됩니다.
    4. 검증파일에 오류가 없으면, "그룹웨어 결재연동" 버튼이 활성화 됩니다.
 6. 그룹웨어 결재연동
-
+   1. "그룹웨어 결재연동" 버튼을 클릭하여 네이버 웍스에 결재 문서 생성 요청을 보냅니다.
 ![그룹웨어 버튼](assets/pg_groupware.png)
 
-![그룹웨어](assets/groupware.png)
-
-   1. "그룹웨어 결재연동" 버튼을 클릭하여 네이버 웍스에 결재 문서 생성 요청을 보냅니다.
    2. 프로그램 로그인시 사용자 권한에 따라 네이버 웍스 SSO 인증정보가 실행됩니다.
    3. 네이버 웍스 인증 화면이 팝업이 되면 로그인을 수행한 후, 자동으로 결재 문서가 생성됩니다.
-   4. 결재 문서가 최종 승인되면, ERP 데이터가 자동으로 업데이트됩니다. (향후 반영예정)
+![그룹웨어](assets/groupware.png)
+
+7. 결재 문서가 최종 승인되면, ERP 데이터가 자동으로 업데이트됩니다. (향후 반영예정)
 
 ### 4 엑셀 파일 작성 상세 방법 (ExcelData_Guide 참조)
 
 * 엑셀 파일은 특정 양식에 맞춰 작성되어야 합니다. `data_processing.py` 파일 내에 정의된 엑셀 파일 양식을 참고하여 작성하십시오.
 * 데이터 형식: 각 필드에 맞는 데이터 형식을 준수해야 합니다. (예: 날짜, 숫자, 텍스트)
-* `data_processing.py`에서는 Pandas 라이브러리를 사용하여 엑셀 파일을 읽고 처리합니다. 엑셀 파일의 각 열은 Pandas DataFrame의 열로 매핑됩니다.
+* `data_processing.py`에서는 Pandas 라이브러리를 사용하여 엑셀 파일을 읽고 처리합니다.
+* 엑셀 파일의 각 열은 Pandas DataFrame의 열로 매핑됩니다.
 
 * 가이드 링크
-* [엑셀 데이터 작성 가이드]([ExcelData_guide.md](https://github.com/devSCKwon/sejin_costgenerator_releases/blob/main/ExcelData_Guide.md))
+* [엑셀 데이터 작성 가이드](https://github.com/devSCKwon/sejin_costgenerator_releases/blob/main/ExcelData_Guide.md)
